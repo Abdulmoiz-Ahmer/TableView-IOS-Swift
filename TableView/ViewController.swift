@@ -9,23 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-
-    let list = ["Albus Severus Potter",
-                "Dobby the House Elf",
-                "Draco Malfoy",
-                "Ginny Weasley",
-                "Harry Potter",
-                "Hermione Granger",
-                "Lily Evans Potter",
-                "Lord Voldemort",
-                "Lucius Malfoy",
-                "Luna Lovegood",
-                "Professor Albus Dumbledore",
-                "Professor Severus Snape",
-                "Ron Weasley",
-                "Rubeus Hagrid",
-                "Sirius Black"
-              ]
+    let list = ["Albus Severus Potter","Dobby the House Elf","Draco Malfoy","Ginny Weasley","Harry Potter","Hermione Granger","Lily Evans Potter","Lord Voldemort","Lucius Malfoy","Luna Lovegood","Professor Albus Dumbledore","Professor Severus Snape","Ron Weasley","Rubeus Hagrid","Sirius Black"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,9 +24,6 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = list[indexPath.row]
         return cell
-        
     }
-
-    
 }
 
